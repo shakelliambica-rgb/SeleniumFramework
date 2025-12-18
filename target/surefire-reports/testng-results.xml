@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results retried="1" ignored="0" total="6" passed="1" failed="3" skipped="1">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-12-12T12:14:11 IST" name="Suite" finished-at="2025-12-12T12:15:07 IST" duration-ms="55968">
+    <groups>
+      <group name="ErrorHandling">
+        <method signature="ErrorValidationTest.loginErrorMessage()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationTest@23e84203]" name="loginErrorMessage" class="rahulshettyacademy.tests.ErrorValidationTest"/>
+      </group> <!-- ErrorHandling -->
+      <group name="Purchase">
+        <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b741d6d]" name="submitOrder" class="rahulshettyacademy.tests.SubmitOrderTest"/>
+      </group> <!-- Purchase -->
+    </groups>
+    <test started-at="2025-12-12T12:14:11 IST" name="Base Class Test" finished-at="2025-12-12T12:14:11 IST" duration-ms="36">
+    </test> <!-- Base Class Test -->
+    <test started-at="2025-12-12T12:14:11 IST" name="Submit Order Test" finished-at="2025-12-12T12:14:57 IST" duration-ms="45851">
+      <class name="rahulshettyacademy.tests.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b741d6d]" started-at="2025-12-12T12:14:13 IST" name="launchApplication" finished-at="2025-12-12T12:14:28 IST" duration-ms="14494" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b741d6d]" started-at="2025-12-12T12:14:28 IST" name="submitOrder" data-provider="getData" finished-at="2025-12-12T12:14:35 IST" duration-ms="7343" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Ambica123, email=shakelliambica@gmail.com, productName=ZARA COAT 3}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+at rahulshettyacademy.pageobject.ProductCatalogue.addProductToCart(ProductCatalogue.java:47)
+at rahulshettyacademy.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b741d6d]" started-at="2025-12-12T12:14:36 IST" name="tearDown" finished-at="2025-12-12T12:14:40 IST" duration-ms="3558" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b741d6d]" started-at="2025-12-12T12:14:40 IST" name="launchApplication" finished-at="2025-12-12T12:14:48 IST" duration-ms="8697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b741d6d]" started-at="2025-12-12T12:14:48 IST" name="submitOrder" data-provider="getData" finished-at="2025-12-12T12:14:52 IST" duration-ms="3462" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{password=Ambica@24, email=ambica@gmail.com, productName=ADIDAS ORIGINAL}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.findElement(org.openqa.selenium.By)" because "prod" is null
+at rahulshettyacademy.pageobject.ProductCatalogue.addProductToCart(ProductCatalogue.java:47)
+at rahulshettyacademy.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:46)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b741d6d]" started-at="2025-12-12T12:14:52 IST" name="tearDown" finished-at="2025-12-12T12:14:57 IST" duration-ms="4566" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="orderHistoryTest()[pri:0, instance:rahulshettyacademy.tests.SubmitOrderTest@4b741d6d]" started-at="2025-12-12T12:14:57 IST" name="orderHistoryTest" finished-at="2025-12-12T12:14:57 IST" depends-on-methods="rahulshettyacademy.tests.SubmitOrderTest.submitOrder" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method rahulshettyacademy.tests.SubmitOrderTest.orderHistoryTest() on instance rahulshettyacademy.tests.SubmitOrderTest@4b741d6d depends on not successfully finished methods 
+[rahulshettyacademy.tests.SubmitOrderTest.submitOrder() on instance rahulshettyacademy.tests.SubmitOrderTest@4b741d6d]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method rahulshettyacademy.tests.SubmitOrderTest.orderHistoryTest() on instance rahulshettyacademy.tests.SubmitOrderTest@4b741d6d depends on not successfully finished methods 
+[rahulshettyacademy.tests.SubmitOrderTest.submitOrder() on instance rahulshettyacademy.tests.SubmitOrderTest@4b741d6d]
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- orderHistoryTest -->
+      </class> <!-- rahulshettyacademy.tests.SubmitOrderTest -->
+    </test> <!-- Submit Order Test -->
+    <test started-at="2025-12-12T12:14:11 IST" name="Error Validation Test" finished-at="2025-12-12T12:15:07 IST" duration-ms="55968">
+      <class name="rahulshettyacademy.tests.ErrorValidationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationTest@23e84203]" started-at="2025-12-12T12:14:11 IST" name="launchApplication" finished-at="2025-12-12T12:14:27 IST" duration-ms="16021" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method retried="true" signature="loginErrorMessage()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationTest@23e84203]" started-at="2025-12-12T12:14:27 IST" name="loginErrorMessage" finished-at="2025-12-12T12:14:33 IST" duration-ms="5514" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<Incorrect email password.> but was:<Incorrect email or password.>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<Incorrect email password.> but was:<Incorrect email or password.>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+at rahulshettyacademy.tests.ErrorValidationTest.loginErrorMessage(ErrorValidationTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationTest@23e84203]" started-at="2025-12-12T12:14:33 IST" name="tearDown" finished-at="2025-12-12T12:14:38 IST" duration-ms="5295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationTest@23e84203]" started-at="2025-12-12T12:14:38 IST" name="launchApplication" finished-at="2025-12-12T12:14:45 IST" duration-ms="6781" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="loginErrorMessage()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationTest@23e84203]" started-at="2025-12-12T12:14:45 IST" name="loginErrorMessage" finished-at="2025-12-12T12:14:48 IST" duration-ms="2847" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected:<Incorrect email password.> but was:<Incorrect email or password.>]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected:<Incorrect email password.> but was:<Incorrect email or password.>
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:115)
+at org.testng.AssertJUnit.assertEquals(AssertJUnit.java:125)
+at rahulshettyacademy.tests.ErrorValidationTest.loginErrorMessage(ErrorValidationTest.java:36)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:328)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1095)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:619)
+at java.base/java.lang.Thread.run(Thread.java:1447)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginErrorMessage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationTest@23e84203]" started-at="2025-12-12T12:14:49 IST" name="tearDown" finished-at="2025-12-12T12:14:52 IST" duration-ms="3077" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationTest@23e84203]" started-at="2025-12-12T12:14:52 IST" name="launchApplication" finished-at="2025-12-12T12:14:57 IST" duration-ms="5396" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="productErrorValidation()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationTest@23e84203]" started-at="2025-12-12T12:14:57 IST" name="productErrorValidation" finished-at="2025-12-12T12:15:07 IST" duration-ms="9281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productErrorValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:rahulshettyacademy.tests.ErrorValidationTest@23e84203]" started-at="2025-12-12T12:15:07 IST" name="tearDown" finished-at="2025-12-12T12:15:07 IST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- rahulshettyacademy.tests.ErrorValidationTest -->
+    </test> <!-- Error Validation Test -->
+  </suite> <!-- Suite -->
+</testng-results>
