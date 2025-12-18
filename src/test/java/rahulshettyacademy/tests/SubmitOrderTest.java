@@ -43,6 +43,7 @@ public class SubmitOrderTest extends BaseTest{
 		ProductCatalogue productCatalogue=landingPage.loginApplicaton(input.get("email"), input.get("password"));
 		
 		List<WebElement>products=productCatalogue.getProductList();
+		System.out.println("Hi");
 		productCatalogue.addProductToCart(input.get(productName));
 		//since we used inheritance concept so child classes can also call parent class methos so calling abstract parent class method from child class
 		CartPage cartPage=productCatalogue.goToCartPage();
